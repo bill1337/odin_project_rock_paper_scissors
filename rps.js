@@ -11,9 +11,7 @@ function Rps(){
        
     }
     computerTurn()
-    let pcChoice = computerTurn()
-    let choice = pcChoice.compChoice
-    
+   
     if(choice === inputlc){
         alert(`computer chose ${compChoice}, tie game!`)
     }
