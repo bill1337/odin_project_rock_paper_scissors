@@ -1,6 +1,43 @@
-function computerTurn() {
-    let x = ['rock', 'paper', 'scissors']
-    let y = x[Math.floor(Math.random() * x.length)]
-    console.log(y)
+function Rps(){
+    
+   let input = prompt('Rock, Paper, or Scissors?')
+   let inputlc = input.toLowerCase()
+   console.log(inputlc)
+
+    function computerTurn() {
+        let compOptions = ['rock', 'paper', 'scissors']
+        let compChoice = compOptions[Math.floor(Math.random() * compOptions.length)]
+        console.log(compChoice)
+       
+    }
+    computerTurn()
+    let pcChoice = computerTurn()
+    let choice = pcChoice.compChoice
+    
+    if(choice === inputlc){
+        alert(`computer chose ${compChoice}, tie game!`)
+    }
+
+    
 }
-computerTurn()
+
+Rps()
+
+// console.log(computerTurn)
+//     let x = prompt('Rock, Paper, or Scissors')
+        
+//     if(x === 'rock'){
+//         alert('Tie game!')
+    
+//     } else {
+//         alert("Fuck You!")
+//     }
+
+
+// function computerTurn() {
+//     let compOptions = ['rock', 'paper', 'scissors']
+//     let compChoice = compOptions[Math.floor(Math.random() * compOptions.length)]
+//     console.log(compChoice)
+// }
+
+// computerTurn()
